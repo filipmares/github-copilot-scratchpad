@@ -107,7 +107,7 @@ a:focus-visible {
 
 .mode-switcher {
     display: inline-grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 3px;
     border: 1px solid var(--scratch-border);
     border-radius: 8px;
@@ -182,17 +182,9 @@ a:focus-visible {
     grid-template-columns: minmax(0, 1fr);
 }
 
-.page[data-mode="split"] {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .page[data-mode="edit"] .preview-pane,
 .page[data-mode="preview"] .editor-pane {
     display: none;
-}
-
-.page[data-mode="split"] .editor-pane {
-    border-right: 1px solid var(--scratch-border);
 }
 
 .editor-pane {
@@ -390,18 +382,6 @@ a:focus-visible {
 
     .save-status {
         display: none;
-    }
-
-    .page[data-mode="split"] {
-        grid-template-columns: minmax(0, 1fr);
-    }
-
-    .page[data-mode="split"] .editor-pane {
-        display: none;
-    }
-
-    .page[data-mode="split"] .preview-pane {
-        display: block;
     }
 
     .editor,
