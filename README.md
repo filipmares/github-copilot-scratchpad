@@ -3,10 +3,12 @@
 A private, personal Markdown scratchpad for the GitHub Copilot app. It follows
 you across projects and sessions while keeping its contents local.
 
+![Scratchpad canvas in edit mode](assets/scratchpad.png)
+
 ## Features
 
 - One persistent Markdown document
-- Edit, split, and preview modes
+- Edit and preview modes
 - Automatic saving
 - System light and dark theme support
 - Safe Markdown preview without remote dependencies
@@ -38,8 +40,8 @@ build steps to run.
 
 ## Use
 
-Type Markdown directly in the canvas and switch between **Edit**, **Split**,
-and **Preview**. Changes save automatically.
+Type Markdown directly in the canvas and switch between **Edit** and
+**Preview**. Changes save automatically.
 
 You can also ask Copilot:
 
@@ -52,7 +54,6 @@ Inside the canvas:
 
 - `Cmd/Ctrl+S` saves immediately.
 - `Cmd/Ctrl+E` opens edit mode.
-- `Cmd/Ctrl+\` opens split mode.
 - `Cmd/Ctrl+P` opens preview mode.
 
 ## Privacy and storage

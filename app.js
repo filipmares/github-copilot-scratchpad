@@ -5,7 +5,7 @@
     const state = {
         content: "",
         lastSavedContent: "",
-        mode: window.innerWidth < 760 ? "edit" : "split",
+        mode: "edit",
         saveTimer: 0,
         saveQueue: Promise.resolve(),
         pendingSaves: 0,
@@ -351,7 +351,6 @@
             ]),
             element("div", { className: "mode-switcher", role: "group", "aria-label": "View mode" }, [
                 buildModeButton("Edit", "edit"),
-                buildModeButton("Split", "split"),
                 buildModeButton("Preview", "preview"),
             ]),
             element("div", { className: "toolbar-actions" }, [
@@ -436,9 +435,6 @@
         } else if (event.key.toLocaleLowerCase() === "p") {
             event.preventDefault();
             setMode("preview");
-        } else if (event.key === "\\") {
-            event.preventDefault();
-            setMode("split");
         }
     });
 
