@@ -3,6 +3,8 @@
 A private, personal Markdown scratchpad for the GitHub Copilot app. It follows
 you across projects and sessions while keeping its contents local.
 
+![Scratchpad canvas in edit mode](assets/scratchpad.png)
+
 ## Features
 
 - One persistent Markdown document
